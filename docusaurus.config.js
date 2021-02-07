@@ -1,7 +1,7 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: '姜宁博客 姜宁知识库',
+  tagline: '落霞与孤鹜齐飞 秋水共长天一色',
+  url: 'https://web.jnblog.cn/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: '姜宁知识库 - 姜宁博客',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -19,13 +19,13 @@ module.exports = {
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: '前端文档',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'blog', label: '理财笔记', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'http://www.jnblog.cn/',
+          label: '姜宁博客',
           position: 'right',
         },
       ],
@@ -47,19 +47,19 @@ module.exports = {
           ],
         },
         {
-          title: 'Community',
+          title: '一些链接',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: '链接1',
+              href: 'http://www.jnblog.cn/',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: '链接2',
+              href: 'http://www.jnblog.cn/',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: '链接3',
+              href: 'http://www.jnblog.cn/',
             },
           ],
         },
@@ -70,14 +70,10 @@ module.exports = {
               label: 'Blog',
               to: 'blog',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 姜宁知识库, Inc. Built with jnblog.`,
     },
   },
   presets: [
