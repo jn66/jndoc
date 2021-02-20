@@ -1,5 +1,5 @@
 module.exports = {
-  title: '姜宁博客 姜宁知识库',
+  title: '姜宁知识库',
   tagline: '落霞与孤鹜齐飞 秋水共长天一色',
   url: 'https://web.jnblog.cn/',
   baseUrl: '/',
@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: '姜宁知识库 - 姜宁博客',
+      title: '姜宁知识库',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',

@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    前端笔记: ['JavaScript','doc1', 'doc2', 'doc3'],
+    前端笔记: ['JavaScript','doc1', 'doc2', 'doc3','React'],
     Features: ['mdx'],
   },
 };
