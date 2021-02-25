@@ -22,6 +22,12 @@ module.exports = {
           label: '前端文档',
           position: 'left',
         },
+        {
+          to: 'docs/fund',
+          activeBasePath: 'docs/fund',
+          label: '基金笔记',
+          position: 'left',
+        },
         {to: 'blog', label: '理财笔记', position: 'left'},
         {
           href: 'http://www.jnblog.cn/',
