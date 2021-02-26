@@ -1,6 +1,7 @@
 ---
 id: JavaScript
 title: JavaScript学习笔记
+sidebar_label: JavaScript学习笔记
 ---
 
 # JavaScript简介
@@ -2604,3 +2605,14 @@ copy() {
     document.body.removeChild(input);  
 }  
 ```
+
+
+
+export const Highlight = ({children, color}) => ( <span style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>{children}</span> );
+
+<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.

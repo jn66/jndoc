@@ -1,6 +1,6 @@
 ---
 id: doc1
-title: Style Guide
+title: 样式文档
 sidebar_label: Style Guide
 slug: /
 ---

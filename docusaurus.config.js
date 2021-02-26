@@ -22,7 +22,7 @@ module.exports = {
           label: '前端文档',
           position: 'left',
         },
-        {to: 'blog', label: '理财笔记', position: 'left'},
+        {to: 'blog', label: '心得体会', position: 'left'},
         {
           href: 'http://www.jnblog.cn/',
           label: '姜宁博客',
@@ -81,16 +81,10 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          sidebarPath: require.resolve('./sidebars.js')
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          showReadingTime: false
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

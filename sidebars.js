@@ -1,8 +1,6 @@
 module.exports = {
   someSidebar: {
-    前端笔记: ['JavaScript','doc1', 'doc2', 'doc3','React'],
-    Features: ['mdx'],
+    前端笔记: ['JavaScript','React','doc1'],
     基金:['fund/first','fund/select','fund/hold','fund/buy'],
   },
-  
 };
