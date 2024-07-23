@@ -1,0 +1,12 @@
+[
+  {
+    "text": "关于",
+    "link": "/about/",
+    "activeMatch": "/about/"
+  },
+  {
+    "text": "文档",
+    "link": "/guide/",
+    "activeMatch": "/guide/"
+  }
+]
