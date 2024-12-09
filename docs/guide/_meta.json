@@ -1,2 +1,32 @@
-["index"]
-["Ai"]
+[
+  {
+    "type": "dir",
+    "name": "Vue",
+    "label": "Vue",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "Other",
+    "label": "Other",
+    "collapsible": true,
+    "collapsed": false
+  }
+  ,
+  {
+    "type": "dir",
+    "name": "MDX",
+    "label": "MDX",
+    "collapsible": true,
+    "collapsed": false
+  }
+  ,
+  {
+    "type": "dir",
+    "name": "Tailwind",
+    "label": "Tailwind",
+    "collapsible": true,
+    "collapsed": false
+  }
+]

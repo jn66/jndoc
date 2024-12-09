@@ -10,6 +10,7 @@ export default defineConfig({
     light: '/logo.png',
     dark: '/logo-dark.png',
   },
+  
   themeConfig: {
     socialLinks: [
       { icon: 'github', mode: 'link', content: '' },

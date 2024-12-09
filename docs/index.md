@@ -11,7 +11,7 @@ hero:
       link: /about/
     - theme: alt
       text: 文档中心
-      link: /guide/
+      link: /guide/Vue/Vue3
   image:
     src: /show.svg
     alt: doc Logo
