@@ -1,0 +1,60 @@
+/* 修复站点全局 Tailwind 生成的 .grid 覆盖主题首页 hero 按钮的 md:flex，导致两个按钮竖排 */
+.grid.md\:flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 首页「采用本站规范的站点」模块 */
+.cnki-sites-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 24px 56px;
+  text-align: center;
+}
+
+.cnki-sites-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--rp-c-text-1, #1f2329);
+}
+
+.cnki-sites-sub {
+  margin: 0 0 24px;
+  color: var(--rp-c-text-2, #666);
+  font-size: 14px;
+}
+
+.cnki-sites {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.cnki-site-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 88px;
+  padding: 20px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--rp-c-divider, #e5e6eb);
+  background: var(--rp-c-bg-soft, #f7f8fa);
+  color: var(--rp-c-text-1, #1f2329);
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.cnki-site-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: var(--rp-c-brand, #1677ff);
+}
+
+@media (max-width: 640px) {
+  .cnki-sites {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
