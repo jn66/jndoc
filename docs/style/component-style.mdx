@@ -1,0 +1,46 @@
+---
+title: 组件样式封装
+---
+
+# 组件样式封装
+
+组件样式要做到「对外隔离、对内可控」，避免样式互相污染。
+
+## BEM
+
+```css
+.card { }
+.card__title { }
+.card--highlight { }
+```
+
+优点：命名清晰、作用域靠约定；缺点：类名偏长。
+
+## Scoped CSS
+
+框架（如 Vue）提供 scoped 样式，自动加属性选择器：
+
+```css
+<style scoped>
+.card { border: 1px solid var(--color-border); }
+</style>
+```
+
+## CSS Modules
+
+通过编译把类名哈希化，避免冲突：
+
+```css
+.title { font-weight: 600; }
+```
+
+```tsx
+import styles from './Card.module.css';
+<div className={styles.title} />
+```
+
+## 避免冲突的经验
+
+- 不使用过于通用的类名：.box、.title
+- 组件根节点加前缀或哈希
+- 慎用 !important，它会破坏可维护性

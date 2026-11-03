@@ -1,0 +1,43 @@
+---
+title: Design Token 与 CSS 变量
+---
+
+# Design Token 与 CSS 变量
+
+Design Token 是设计决策的最小单元，落地为 CSS 变量后可在主题间共享。
+
+## 常见 Token 分类
+
+- 颜色：主色、成功、警告、文字、边框、背景
+- 间距：4 / 8 / 12 / 16 / 24
+- 字号：12 / 14 / 16 / 20 / 24
+- 圆角：2 / 4 / 8 / 999（胶囊）
+
+## 定义变量
+
+```css
+:root {
+  --color-primary: #1677ff;
+  --color-text: #1f2329;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --radius-md: 8px;
+  --font-size-base: 14px;
+}
+```
+
+## 使用变量
+
+```css
+.btn {
+  color: var(--color-text);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+}
+```
+
+## 好处
+
+- 一处修改，全局生效
+- 配合主题切换，天然支持暗黑模式
+- 设计稿与代码使用同一套命名

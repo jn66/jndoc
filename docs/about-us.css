@@ -1,0 +1,139 @@
+.cnki-about-hero {
+  background: linear-gradient(135deg, #1677ff 0%, #0958d9 100%);
+  color: #fff;
+  padding: 72px 24px;
+  text-align: center;
+}
+
+.cnki-about-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.cnki-about-subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.cnki-about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 960px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.cnki-about-stat {
+  text-align: center;
+}
+
+.cnki-about-stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1677ff;
+}
+
+.cnki-about-stat-label {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.cnki-about-focus {
+  max-width: 960px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.cnki-about-section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.cnki-about-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cnki-about-focus-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.cnki-about-focus-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.cnki-about-focus-card p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.cnki-about-timeline {
+  max-width: 960px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.cnki-about-timeline-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cnki-about-timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1677ff;
+  margin-top: 6px;
+  flex: none;
+}
+
+.cnki-about-timeline-content h4 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.cnki-about-timeline-content p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.cnki-about-bottom {
+  background: #f5f7fa;
+  padding: 48px 24px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.cnki-about-bottom h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+}
+
+.cnki-about-btn {
+  display: inline-block;
+  background: #1677ff;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .cnki-about-stats,
+  .cnki-about-focus-grid {
+    grid-template-columns: 1fr;
+  }
+}

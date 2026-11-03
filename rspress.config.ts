@@ -3,8 +3,8 @@ import { defineConfig } from 'rspress/config';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  title: 'CNKI-DOC',
-  description: 'JiangNing study document',
+  title: 'CNKI前端规范',
+  description: 'CNKI 前端团队规范与样式库共建文档',
   icon: '/logo.png',
   logo: {
     light: '/logo.png',

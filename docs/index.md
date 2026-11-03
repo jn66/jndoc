@@ -2,9 +2,9 @@
 pageType: home
 
 hero:
-  name: CNKI前端进步文档
-  text: Front-end Progress Document
-  tagline: 基于 Rust 打造的前端文档站，快快快
+  name: CNKI前端规范
+  text: Front-end Specification
+  tagline: CNKI 前端团队的规范与样式库文档
   actions:
     - theme: brand
       text: 了解本站

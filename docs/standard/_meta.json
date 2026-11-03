@@ -1,0 +1,27 @@
+[
+  {
+    "type": "file",
+    "name": "overview",
+    "label": "前端规范总览"
+  },
+  {
+    "type": "file",
+    "name": "code-style",
+    "label": "代码风格规范"
+  },
+  {
+    "type": "file",
+    "name": "component-design",
+    "label": "组件设计规范"
+  },
+  {
+    "type": "file",
+    "name": "naming",
+    "label": "命名规范"
+  },
+  {
+    "type": "file",
+    "name": "git-convention",
+    "label": "Git 提交规范"
+  }
+]

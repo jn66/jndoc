@@ -1,0 +1,51 @@
+---
+title: Git 提交规范
+---
+
+# Git 提交规范
+
+清晰的提交历史是项目可追溯性的保障。
+
+## 分支模型
+
+- main：受保护的稳定分支
+- develop：日常集成分支
+- feature/xxx：功能分支
+- fix/xxx：修复分支
+
+## Commit Message
+
+推荐使用 Conventional Commits：
+
+```text
+<type>(<scope>): <subject>
+
+<body>
+```
+
+常用 type：
+
+- feat：新功能
+- fix：修复缺陷
+- docs：文档变更
+- refactor：重构
+- test：测试
+- chore：构建/工具
+
+示例：
+
+```text
+feat(auth): 支持手机号登录
+```
+
+## 提交前检查
+
+- 本地通过 lint 与单测
+- 一个提交只做一件事
+- 提交信息能回答「为什么改」
+
+## Code Review
+
+- 小步提交，便于评审
+- Review 关注逻辑、边界与安全性
+- 合并前至少一人 Approve

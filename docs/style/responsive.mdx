@@ -1,0 +1,50 @@
+---
+title: 响应式与多端适配
+---
+
+# 响应式与多端适配
+
+一套代码适配多种屏幕，关键是「移动优先 + 断点 + 相对单位」。
+
+## 断点建议
+
+```text
+sm: 640px
+md: 768px
+lg: 1024px
+xl: 1280px
+```
+
+## 移动优先
+
+先写小屏样式，再用 min-width 媒体查询向上增强：
+
+```css
+.container { padding: 12px; }
+@media (min-width: 768px) {
+  .container { padding: 24px; }
+}
+```
+
+## 相对单位
+
+- 字号可用 rem，配合根字号缩放
+- 弹性布局优先使用 flex / grid
+- 大屏适配可结合 vw 做流式排版
+
+## 容器查询
+
+现代浏览器支持容器查询，让组件根据容器宽度而非视口宽度响应：
+
+```css
+.card { container-type: inline-size; }
+@container (min-width: 400px) {
+  .card { display: flex; }
+}
+```
+
+## 注意
+
+- 不要为了适配写死过多媒体查询
+- 图片与媒体资源使用响应式尺寸
+- 在真机与主流分辨率下验证

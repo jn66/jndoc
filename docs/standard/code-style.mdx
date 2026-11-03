@@ -1,0 +1,50 @@
+---
+title: 代码风格规范
+---
+
+# 代码风格规范
+
+代码风格的目标是「让风格不再成为讨论点」。使用工具统一，而不是靠约定记忆。
+
+## 基础配置
+
+推荐组合：
+
+- ESLint：发现语法与逻辑问题
+- Prettier：统一格式化（缩进、引号、换行）
+- TypeScript：类型约束
+
+```json
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  }
+}
+```
+
+## 缩进与换行
+
+- 使用 2 个空格缩进，不使用 Tab
+- 语句结尾使用分号
+- 字符串优先使用单引号
+- 一行不超过 100 个字符
+
+## 文件组织
+
+- 一个文件只导出一个主要模块
+- 导入顺序：第三方 → 内部 → 相对
+- 相关常量放在文件顶部或独立 constants 文件
+
+## 用工具卡住
+
+```json
+{
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": ["eslint --fix", "prettier --write"]
+  }
+}
+```
+
+这样在提交前自动修复，避免把格式问题带入仓库。

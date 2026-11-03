@@ -1,0 +1,38 @@
+---
+title: 主题定制与暗黑模式
+---
+
+# 主题定制与暗黑模式
+
+主题的本质，是把「固定颜色」替换为「变量」，再切换变量的值。
+
+## 基于 data-theme
+
+```css
+:root,
+[data-theme='light'] {
+  --color-bg: #ffffff;
+  --color-text: #1f2329;
+}
+
+[data-theme='dark'] {
+  --color-bg: #1a1a1a;
+  --color-text: #e6e6e6;
+}
+```
+
+切换时只需修改根节点属性：
+
+```ts
+document.documentElement.setAttribute('theme', isDark ? 'dark' : 'light');
+```
+
+## 设计要点
+
+- 所有颜色走变量，页面不要出现硬编码色值
+- 暗黑模式要同时处理背景、文字、边框、阴影
+- 提供清晰的切换入口，并记住用户选择
+
+## 多主题扩展
+
+如果有品牌主题，可继续追加 [data-theme='brand']，复用同一套变量名即可平滑切换。
